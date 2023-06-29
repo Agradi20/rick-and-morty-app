@@ -1,0 +1,45 @@
+.fondo {
+    width: 220px;
+    margin-inline: 30px;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    margin-left: 250px;
+    background-color: rgb(207, 201, 201);
+    border-radius: 5%;
+}
+
+h2 {
+    background-color: rgb(145, 145, 143);
+    text-align: center;
+    border-radius: 40%;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+.fondo:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+.boton {
+    border-color: black;
+    border-style: groove;
+    background-color: red;
+    color: black;
+    width: 20px;
+    margin-left: 5%;
+    
+}
+
+.boton:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+.foto {
+    height: 200px;
+    margin-left: 9px;
+    margin-bottom: 5px;
+}
