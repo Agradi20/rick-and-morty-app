@@ -1,6 +1,5 @@
 .divSearch {
     text-align: center;
-    margin-top: 100px;
 }
 
 .divSearch input {
@@ -10,6 +9,7 @@
     padding: 0 20px;
     color: #000;
     border-radius: 30px;
+    margin-top: 10px;
 }
 
 .divSearch button {
