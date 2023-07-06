@@ -7,6 +7,7 @@ export default function Nav(props) {
     return (
        <div className={style.divv}>
          <div className={style.texto}>
+            <NavLink to="/favorites">FAVS ❤️</NavLink>
          <NavLink to="/about">ABOUT</NavLink>
          <NavLink to="/home">HOME</NavLink>
          </div>

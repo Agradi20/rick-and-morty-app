@@ -9,12 +9,12 @@ const reducer = (state = initialState, action) => {
         case ADD_FAV:
             return {
                 ...state,
-                myFavorites: action.payload,
+                myFavorites: [...state.myFavorites, action.payload]
             };
             case REMOVE_FAV:
                 return {
                     ...state,
-                    myFavorites: action.id,
+                    myFavorites: state.myFavorites.filter((pj) => pj.id !== action.payload), 
                 };
                 default:
                     return {
