@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 import { connect } from "react-redux";
 
 function Card(props) {
+   
    const [isFav, setIsFav] = useState(false);
 
    const {myFavorites} = props;
