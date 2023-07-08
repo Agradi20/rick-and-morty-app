@@ -1,0 +1,26 @@
+.divv {
+    background-color: gray;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    
+}
+
+.divSearch {
+    background-color: gray;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+.texto {
+    gap: 100px;
+   display: flex;
+   justify-content: center;
+   margin-left: 100px;
+   margin-right: 30%;
+   margin-top: 15px;
+   margin-bottom: 15px;
+   background-color: antiquewhite;
+    
+}

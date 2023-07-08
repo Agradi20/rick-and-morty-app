@@ -1,0 +1,29 @@
+.divSearch {
+    text-align: center;
+}
+
+.divSearch input {
+    width: 240px;
+    height: 40px;
+    font-size: 18px;
+    padding: 0 20px;
+    color: #000;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+.divSearch button {
+    background-color: blueviolet;
+   text-align: center;
+   width: 100px;
+   height: 60px;
+   line-height: 55px;
+   font-size: 20px;
+   border-radius: 30px;
+   cursor: pointer;
+}
+
+.divSearch button:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-5%);
+}
