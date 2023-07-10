@@ -17,7 +17,7 @@ function Card(props) {
             setIsFav(true);
          }
       });
-   }, [myFavorites]);
+   }, [myFavorites, props.id]);
 
    const handleFavorite = () => {
       if(isFav) {
