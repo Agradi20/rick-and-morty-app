@@ -1,13 +1,18 @@
-const http = require('http')
-const data = require('./utils/data');
+const express = require('express');
+const router = require("./routes/index")
+const morgan = require("morgan");
+const cors = require("cors");
+const server = express();
+const PORT = 3001;
 
-http.createServer((req, res) => {
-    res.setHeader('Access-control-Allow-origin', '*');
+server.use(cors());
 
-    if(req.url.includes("/rickandmorty/character")) {
-        const id = req.url.split('/').at(-1)
-        const result = data.find(pj => pj.id === Number(id));
-        res.writeHead(200, {'Content-type': 'application/json'})
-        res.end(JSON.stringify(result));
-    }
-}).listen(3001, 'localhost');
+server.use(express.json())
+
+server.use(morgan("dev"));
+
+server.use("/rickandmorty", router);
+
+server.listen(PORT, () => {
+   console.log('Server raised in port: ' + PORT);
+});
