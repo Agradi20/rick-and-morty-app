@@ -15,7 +15,7 @@ server.use(morgan("dev"));
 server.use("/rickandmorty", router);
 
 server.listen(PORT, () => {
-   conn.sync({force: true})
+   conn.sync()
    console.log('Server raised in port: ' + PORT);
 });
 

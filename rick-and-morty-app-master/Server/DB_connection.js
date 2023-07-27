@@ -14,6 +14,8 @@ const sequelize = new Sequelize(
    { logging: false, native: false }
 );
 
+console.log(DB_HOST, DB_PASSWORD, DB_USER);
+
 // EJERCICIO 05
 // Debajo de este comentario puedes ejecutar la función de los modelos.
 
